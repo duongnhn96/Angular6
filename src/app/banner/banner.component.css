@@ -1,0 +1,9 @@
+:host{
+    display: block;
+    background-color: aqua;
+    display: flex
+}
+img{
+    margin: 3rem 0;
+    max-width: 400px;
+}
