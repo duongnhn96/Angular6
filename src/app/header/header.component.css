@@ -17,3 +17,6 @@ li{
     font-weight: bold;
     
 }
+img{
+     justify-content: flex-end;
+}

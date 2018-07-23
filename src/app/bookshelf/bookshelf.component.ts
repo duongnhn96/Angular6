@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-bookshelf',
+  selector: 'duong-bookshelf',
   templateUrl: './bookshelf.component.html',
   styleUrls: ['./bookshelf.component.css']
 })
