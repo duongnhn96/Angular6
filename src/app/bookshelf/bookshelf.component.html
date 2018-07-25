@@ -1,3 +1,8 @@
-<div class="bookshelf" >
-  <duong-book *ngFor="let item of Books"></duong-book>
+<div class="search">
+  <h2>Most Popular Book </h2>
+  <button (click)="Search(keyword)"><img src="../../assets/img/search.png"  alt="search" /></button>
+  <input type="search" [(ngModel)]="keyword" placeholder="Search books">
+ 
 </div>
+
+<duong-book *ngFor="let item of tempBooks"></duong-book>

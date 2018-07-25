@@ -1,4 +1,45 @@
 :host{
-    display: block;
-    
+   display: block;
+    margin: 3rem 1rem 3rem 1rem ;
+    clear: both;
+
 }
+.search{
+    display: flow-root;
+    margin-bottom: 1rem;
+}
+
+input{
+    float: right; 
+    text-align: center;  
+    padding: 13px;
+    box-shadow: 4px 4px 3px -3px #f1f1f1;
+    border-radius: 33px 33px 33px 33px;
+    border: 2px solid #f7f7f7;
+
+}
+input:focus, button:focus{
+    outline: none;
+}
+input:hover{
+    border:2px solid #2a8a04;
+}
+button{
+    float: right;  
+    border: 0px; 
+    background: transparent;
+}
+button img{
+    max-width: 40px;
+    max-height: 40px
+}
+button img:hover{
+    max-width: 43px;
+    max-height: 43px;
+}
+h2{
+    float: left;
+    margin-left: 3.9rem;
+    text-transform: uppercase;
+}
+

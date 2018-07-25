@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookshelfComponent implements OnInit {
 
-  constructor() { }
-  Books: Number[] = [1, 2, 3, 4, 5];
+  constructor() {
+   }
+  keywork: String = '' ;
+  books: String[] = ['Book 1', 'Angular', 'JQuery', 'My String', 'NodeJS', 'Duong', 'Nam', 'Hacker'];
+  tempBooks: String[] = [];
+  Search(keywork): void {
+    this.tempBooks = this.books.filter(b => b.toLowerCase().includes(keywork));
+  }
   ngOnInit() {
+    this.tempBooks = this.books;
   }
 
 }

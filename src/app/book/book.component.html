@@ -1,5 +1,5 @@
 <div class="frame">
-    <img src="{{bookCover}}" height="300px"/>
+    <img [src]="bookCover"/>
     <h3> Angular cơ bản</h3>
-    <button type="submit">Angular</button>
+    <button type="submit" (click)="download()">Get it now</button>
 </div>

@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 
 export class BookComponent {
     title = 'app';
+    bookTitle: String = 'Angular';
     bookCover: String = '../../assets/img/book.jpg';
-
+    download(): void {
+       console.log('aaa');
+       this.bookTitle = 'aaa';
+    }
 }

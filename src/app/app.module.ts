@@ -6,7 +6,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { BookshelfComponent } from './bookshelf/bookshelf.component';
-
+import {FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +17,8 @@ import { BookshelfComponent } from './bookshelf/bookshelf.component';
     BookshelfComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
