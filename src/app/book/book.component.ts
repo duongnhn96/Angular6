@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Ibook } from './ibook';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'duong-book',
@@ -6,12 +8,14 @@ import { Component } from '@angular/core';
     styleUrls: ['./book.component.css']
 })
 
-export class BookComponent {
-    title = 'app';
-    bookTitle: String = 'Angular';
-    bookCover: String = '../../assets/img/book.jpg';
+export class BookComponent implements OnInit {
+
+    @Input() book: Ibook[];
+    @Output() getBook: EventEmitter<any> = new EventEmitter<any>();
+
     download(): void {
-       console.log('aaa');
-       this.bookTitle = 'aaa';
+        this.getBook.emit(this.book);
+    }
+    ngOnInit(): void {
     }
 }

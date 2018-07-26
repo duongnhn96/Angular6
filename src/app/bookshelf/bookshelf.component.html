@@ -5,4 +5,4 @@
  
 </div>
 
-<duong-book *ngFor="let item of tempBooks"></duong-book>
+<duong-book [book]='item' (getBook)="onGetBook($event)" *ngFor="let item of tempBooks"></duong-book>
