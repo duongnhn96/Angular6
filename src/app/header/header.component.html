@@ -1,21 +1,10 @@
-
-<ul>
-  <li class="img-left">
-    <img src="../../assets/img/logo.png"/>
-  </li>
-  <li>
-    E-BOOKS
-  </li>
-  <li>
-    CLASS
-  </li>
-  <li>
-    LOGIN
-  </li>
-  <li>
-    SIGN UP
-  </li>
-  <li class="img2">
-    <img class="search-img" src="../../assets/img/search.png"  alt="search" />
-  </li>
-</ul>
+<nav>
+  <h1 class="logo">JTC
+    <span>BOOK</span>
+  </h1>
+  <div class="search">
+    <input type="search" [(ngModel)]='keyword' (ngModelChange)="search(keyword)" placeholder="Search book">
+    <i class="fa fa-search"></i>
+    <app-book-search-results *ngIf="bookResults.length > 0" [books]='bookResults'></app-book-search-results>
+  </div>
+</nav>

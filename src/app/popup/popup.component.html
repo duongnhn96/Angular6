@@ -1,0 +1,5 @@
+<input type="text" name="title" id="title" ngModel #title="ngModel" placeholder="Book Title"> 
+<input type="text" name="desc" id="desc" ngModel #desc="ngModel" placeholder="Book Description"> 
+<input type="text" name="author" id="author" ngModel #author="ngModel" placeholder="Author"> 
+<input type="text" name="cover" id="cover" ngModel #cover="ngModel" placeholder="cover"> 
+<button type="button" (click)="addBook(title.value,desc.value,author.value,cover.value)">Submit</button>

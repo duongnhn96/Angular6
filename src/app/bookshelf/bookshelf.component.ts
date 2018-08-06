@@ -1,64 +1,39 @@
-import { Ibook } from './../book/ibook';
+import { IBookShelfSection, IBook } from './bookshelf.interface';
 import { Component, OnInit } from '@angular/core';
+import { BookService } from '../services/book.service';
 
 @Component({
-  selector: 'duong-bookshelf',
+  selector: 'app-bookshelf',
   templateUrl: './bookshelf.component.html',
-  styleUrls: ['./bookshelf.component.css']
+  styleUrls: ['./bookshelf.component.scss']
 })
 export class BookshelfComponent implements OnInit {
 
-  constructor() {
+  sections: IBookShelfSection[];
 
-  }
-  keywork: String = '';
-  books: Ibook[];
-  tempBooks: Ibook[];
-  Search(keywork): void {
-
-    this.tempBooks = this.books.filter(b => b.bookTitle.toLowerCase().includes(keywork.toLowerCase()));
-
-  }
-  onGetBook(book: any) {
-    alert(book.bookCover);
+  constructor(private bookService: BookService) { }
+  data: Boolean = false;
+  showPopup() {
+    this.data = true;
   }
   ngOnInit() {
-    this.books = [{
-      bookTitle: 'Duong hello',
-      bookCover: 'assets/img/book.jpg'
-    },
-    {
-      bookTitle: 'Duong hell555o',
-      bookCover: 'assets/img/book.jpg'
-    },
-    {
-      bookTitle: 'Duong hel555lo',
-      bookCover: 'assets/img/book.jpg'
-    },
-    {
-      bookTitle: 'Duong hel55\lo',
-      bookCover: 'assets/img/book.jpg'
-    },
-    {
-      bookTitle: 'Duong hefdddfsllo',
-      bookCover: 'assets/img/book.jpg'
-    },
-    {
-      bookTitle: 'Duong hellfsdfdo',
-      bookCover: 'assets/img/book.jpg'
-    }
-    ,
-    {
-      bookTitle: 'Duong hellfsdfdo',
-      bookCover: 'assets/img/book.jpg'
-    }
-    ,
-    {
-      bookTitle: 'Duong hellfsdfdo',
-      bookCover: 'assets/img/book.jpg'
-    }
-    ];
-    this.tempBooks = this.books;
+    this.sections = [{
+      name: 'Phổ Biến',
+      books: [],
+      filters: ['basic', 'advance']
+    }, {
+      name: 'HOT',
+      books: [],
+      filters: ['basic', 'advance']
+    }];
+
+    this.bookService.getBooks('feature').subscribe((books: IBook[]) => {
+      this.sections[0].books = books;
+    });
+    this.bookService.getBooks('hot').subscribe((books: IBook[]) => {
+      this.sections[1].books = books;
+    });
   }
 
 }
+

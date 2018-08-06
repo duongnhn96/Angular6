@@ -1,21 +1,11 @@
-import { Ibook } from './ibook';
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IBook } from '../bookshelf/bookshelf.interface';
 
 @Component({
-    selector: 'duong-book',
-    templateUrl: './book.component.html',
-    styleUrls: ['./book.component.css']
+    selector: 'app-book',
+    templateUrl: 'book.component.html',
+    styleUrls: ['book.component.scss']
 })
-
-export class BookComponent implements OnInit {
-
-    @Input() book: Ibook[];
-    @Output() getBook: EventEmitter<any> = new EventEmitter<any>();
-
-    download(): void {
-        this.getBook.emit(this.book);
-    }
-    ngOnInit(): void {
-    }
+export class BookComponent {
+    @Input() book: IBook;
 }

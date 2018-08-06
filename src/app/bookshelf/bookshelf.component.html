@@ -1,8 +1,13 @@
-<div class="search">
-  <h2>Most Popular Book </h2>
-  <button (click)="Search(keyword)"><img src="../../assets/img/search.png"  alt="search" /></button>
-  <input type="search" [(ngModel)]="keyword" placeholder="Search books">
- 
+<div class="container">
+  <button (click)="showPopup()">CLICK ME!</button>
+  <app-popup  *ngIf="data==true" ></app-popup>
+  <div class="section" *ngFor="let section of sections">
+    <div class="header-section">
+      <h3>{{section.name}}</h3>
+      <ul>
+        <li *ngFor="let filter of section.filters">{{filter}}</li>
+      </ul>
+    </div>
+    <app-book  [book]="book" *ngFor="let book of section.books"></app-book>
+  </div>
 </div>
-
-<duong-book [book]='item' (getBook)="onGetBook($event)" *ngFor="let item of tempBooks"></duong-book>

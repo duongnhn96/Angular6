@@ -1,0 +1,138 @@
+{
+  "books": [
+    {
+      "title": "Angular Cơ Bản",
+      "author": "duong",
+      "cover": "https://spark.adobe.com/images/landing/examples/how-to-book-cover.jpg",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque omnis soluta sit hic placeat temporibus suscipit veniam quam ex autem!",
+      "categories": [
+        "feature",
+        "hot"
+      ],
+      "filters": [
+        "basic"
+      ]
+    },
+    {
+      "title": "Nodejs Cơ Bản",
+      "author": "duong",
+      "cover": "https://spark.adobe.com/images/landing/examples/how-to-book-cover.jpg",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque omnis soluta sit hic placeat temporibus suscipit veniam quam ex autem!",
+      "categories": [
+        "hot",
+        "basic"
+      ],
+      "filters": [
+        "basic",
+        "manga"
+      ]
+    },
+    {
+      "title": "Mongo Cơ Bản",
+      "author": "duong",
+      "cover": "https://spark.adobe.com/images/landing/examples/how-to-book-cover.jpg",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque omnis soluta sit hic placeat temporibus suscipit veniam quam ex autem!",
+      "categories": [
+        "hot",
+        "basic"
+      ],
+      "filters": [
+        "basic",
+        "manga"
+      ]
+    },
+    {
+      "title": "Front-End Cơ Bản",
+      "author": "duong",
+      "cover": "https://spark.adobe.com/images/landing/examples/how-to-book-cover.jpg",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque omnis soluta sit hic placeat temporibus suscipit veniam quam ex autem!",
+      "categories": [
+        "feature",
+        "basic"
+      ],
+      "filters": [
+        "basic",
+        "manga"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Angular 6",
+      "author": "duong",
+      "cover": "https://spark.adobe.com/images/landing/examples/how-to-book-cover.jpg",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque omnis soluta sit hic placeat temporibus suscipit veniam quam ex autem!",
+      "categories": [
+        "feature"
+      ],
+      "filters": [
+        "basic"
+      ]
+    },
+    {
+      "[{ \"title\": \"Angular Cơ Bản\"}]": "",
+      "id": 2
+    },
+    {
+      "\"title\": \"Angular Cơ Bản\"": "",
+      "id": 3
+    },
+    {
+      "title": "Angular Cơ Bản",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "title": "aaa",
+      "id": 8
+    },
+    {
+      "title": "aaa",
+      "id": 9
+    },
+    {
+      "title": "",
+      "id": 10
+    },
+    {
+      "id": 1533547400105,
+      "title": "aaa"
+    },
+    {
+      "id": 1533547578774,
+      "title": "aaa"
+    },
+    {
+      "id": 1533548069048,
+      "title": "Duong",
+      "detail": "Rip",
+      "cover": "https://about.canva.com/wp-content/uploads/sites/3/2015/01/children_bookcover.png",
+      "author": "Duong"
+    },
+    {
+      "id": 1533548455390,
+      "title": "aaa",
+      "detail": "aaaa",
+      "cover": "https://about.canva.com/wp-content/uploads/sites/3/2015/01/children_bookcover.png",
+      "author": "aaaa",
+      "categories": "Basic",
+      "filter": "hot"
+    },
+    {
+      "id": 1533549745204,
+      "title": "",
+      "detail": "",
+      "cover": "",
+      "author": "",
+      "categories": "Basic",
+      "filter": "hot"
+    }
+  ]
+}
